@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Patrick Hand', cursive;
+  line-height: 1.5;
+  font-size: 2rem;
+  background-color: #eee;
+}
+/*# sourceMappingURL=index.css.map */

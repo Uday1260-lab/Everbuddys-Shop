@@ -1,0 +1,225 @@
+.home {
+  &-front {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 80vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 196, 221, 0.2),
+        rgba(168, 92, 249, 0.5)
+    );
+
+      &-logo{
+        width: 75%;
+        height: 75%;
+        transition: all 0.2s;
+        
+        &:hover{
+          transform: scale(1.1) translateY(-2px);
+        }
+      }
+  }
+
+  &-category{
+    background-image: linear-gradient(to right bottom, rgb(198, 240, 238), rgb(40, 146, 143));
+    display: grid;
+    justify-content: center;
+
+    &-a{
+      padding: 7.5rem 0;
+      text-align: center;
+      text-decoration: none;
+      color: rgb(24, 74, 83);
+      font-size: 3rem;
+      transition: all 0.2s;
+
+      &:hover{
+        color: rgb(240, 165, 0);
+        transform: translateY(-2px) scale(1.25);        
+      }
+    }
+    
+    &-heading{
+      padding: 10rem 0;
+      font-size: 5rem;
+      font-family: "El Messiri", sans-serif;
+      text-align: center;
+      background-image: linear-gradient(to right, rgb(0, 85, 85), rgb(6, 154, 142));
+      background-clip: text;
+      color: transparent;
+      transition: all 0.2s;
+
+      &:hover{
+        background-image: linear-gradient(to right, rgb(51, 60, 131), rgb(242, 74, 114));
+        transform: translateY(-2px) scale(1.1);        
+      }
+
+    }
+
+    &-container{
+      display: grid;
+      grid-gap: 5rem;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-rows: repeat(auto-fit, 1fr);
+      
+      &-card{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        transition: all 0.2s;
+        overflow: hidden;
+  
+        &:hover{
+          transform: translateY(-2px) scale(1.2);
+          border-radius: 1rem;
+          background-image: linear-gradient(
+            to right bottom,
+            rgb(255, 221, 238),
+            rgb(233, 142, 198)
+          );
+        }
+
+        &-img{
+          overflow: hidden;
+          width: 100%;
+        }
+
+        &-heading{
+          font-weight: 300;
+          padding-left: 0.5rem;
+          font-family: "Ubuntu", sans-serif;          
+        }
+      }
+    }
+  }
+
+  &-discount {
+    height: 140vh;
+    position: relative;
+
+    &-img {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-heading {
+      color: rgba(0,0,0, 0.75);
+      z-index: 1;
+      position: absolute;
+      padding: 10rem;
+      top: 80vh;
+      height: 35rem;
+      width: 100%;
+      background-color: rgba(249, 243, 238, 0.6);
+      font-size: 5rem;
+      font-family: "El Messiri", sans-serif;
+
+      &-percentage {
+        font-size: 10rem;
+        transition: all 0.2s;
+        &:hover {
+          color: rgba(232, 99, 10, 0.75);
+        }
+      }
+
+      &-text {
+        font-size: 1.5rem;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        transition: all 0.2s;
+        &:hover {
+          color: rgba(232, 99, 10, 0.75);
+        }
+      }
+    }
+  }
+
+  &-features {
+    margin: 5rem 0rem;
+
+    &-heading {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      margin-left: auto;
+      font-size: 5rem;
+      margin-right: auto;
+      font-family: "El Messiri", sans-serif;
+      background-image: linear-gradient(
+        to right,
+        rgb(110, 60, 188),
+        rgb(212, 122, 232)
+      );
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+      width: max-content;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      transition: all 0.2s;
+      &:hover {
+        background-image: linear-gradient(
+          to right,
+          rgb(255, 92, 141),
+          rgb(254, 131, 198)
+        );
+        background-clip: text;
+        color: transparent;
+        transform: translateY(-2px) scale(1.1);
+      }
+    }
+
+    &-container {
+      margin: 1rem 10rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-column-gap: 7.5rem;
+      &-card {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(239, 234, 216),
+          rgb(208, 201, 192)
+        );
+        transition: all 0.2s;
+        &-heading {
+          font-family: "El Messiri", sans-serif;
+          font-weight: 600;
+          font-size: 3rem;
+          margin-bottom: 1rem;
+          background-image: linear-gradient(
+            to right,
+            rgb(110, 60, 188),
+            rgb(212, 122, 232)
+          );
+          background-clip: text;
+          color: transparent;
+        }
+
+        &-p {
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 400;
+          background-image: linear-gradient(to right, rgb(40, 150, 114), rgb(0, 117, 128));
+          background-clip: text;
+          color: transparent;
+        }
+
+        &:hover {
+          transform: translateY(-2px) scale(1.1);
+          background-image: linear-gradient(
+            to right bottom,
+            rgb(255, 221, 238),
+            rgb(255, 189, 230)
+          );
+        }
+      }
+    }
+  }
+}

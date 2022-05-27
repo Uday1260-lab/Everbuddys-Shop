@@ -1,0 +1,62 @@
+.header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#F806CC), color-stop(#A91079), to(#570A57));
+  background-image: linear-gradient(to right bottom, #F806CC, #A91079, #570A57);
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  height: 50%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-left: 2.5rem;
+}
+
+.header-logo:hover {
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+}
+
+.header-nav-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: #051f22;
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header-nav-a:hover {
+  color: #E0D8B0;
+  -webkit-transform: translateY(-2px) scale(1.1);
+          transform: translateY(-2px) scale(1.1);
+}
+
+.header-nav-a-img {
+  color: currentColor;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+/*# sourceMappingURL=Header.css.map */

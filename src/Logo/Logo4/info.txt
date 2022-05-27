@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Kingthings_Petrock
+font link: http://www.kingthingsfonts.co.uk/fonts/fonts.htm
+font author: Kingthings
+font author site: http://www.kingthingsfonts.co.uk/
+Slogan Font: LindenHill-webfont.ttf
+
+icon designer: Rflor
+icon designer link: /rflor
+        
+{"bg":"#EFF5EB","icon-gradient-0":"#21690F","icon-gradient-1":"#88C848","font":"#1C300E","slogan":"#304422"}
+      
